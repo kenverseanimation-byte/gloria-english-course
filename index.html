@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Content Security Policy for hosts that cannot send headers (GitHub Pages): only this site's own files run.
+     The same policy, plus frame-ancestors, is sent as a header by _headers / .htaccess on other hosts. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<title>Gloria English Course | Kursus Bahasa Inggris di Pulukan, Jembrana sejak 1996</title>
+<meta name="description" content="Gloria English Course (LKP Gloria) membuka kursus bahasa Inggris Elementary sampai Advanced, English for Kids, English for Fun, dan jasa terjemahan di Pulukan, Jembrana, Bali, sejak 1996.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Alamat situs di GitHub Pages. Ganti semua "https://kenverseanimation-byte.github.io/gloria-english-course/" di file ini
+     dengan domain sendiri setelah domain dibeli dan disambungkan. -->
+<link rel="canonical" href="https://kenverseanimation-byte.github.io/gloria-english-course/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="Gloria English Course, kursus bahasa Inggris sejak 1996">
+<meta property="og:description" content="Kursus bahasa Inggris di Pulukan, Jembrana, Bali. Daftar dan tanya biaya lewat WhatsApp.">
+<meta property="og:url" content="https://kenverseanimation-byte.github.io/gloria-english-course/">
+<meta property="og:image" content="https://kenverseanimation-byte.github.io/gloria-english-course/assets/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/boot.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["EducationalOrganization", "LocalBusiness"],
+  "name": "Gloria English Course",
+  "legalName": "LKP Gloria",
+  "alternateName": "Bimbingan Belajar GLORIA",
+  "foundingDate": "1996",
+  "slogan": "We help you to make your dreams come true",
+  "url": "https://kenverseanimation-byte.github.io/gloria-english-course/",
+  "logo": "https://kenverseanimation-byte.github.io/gloria-english-course/assets/logo-gloria.png",
+  "image": "https://kenverseanimation-byte.github.io/gloria-english-course/assets/share.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Ciung Wanara No. 24A, Banjar/Desa Pulukan",
+    "addressLocality": "Pekutatan",
+    "addressRegion": "Kabupaten Jembrana, Bali",
+    "addressCountry": "ID"
+  },
+  "telephone": "+62-857-2542-8189",
+  "contactPoint": [
+    { "@type": "ContactPoint", "name": "Owner", "telephone": "+62-857-2542-8189", "contactType": "customer service", "availableLanguage": ["id", "en"] },
+    { "@type": "ContactPoint", "name": "Staff", "telephone": "+62-851-4273-4756", "contactType": "customer service", "availableLanguage": ["id", "en"] }
+  ],
+  "email": "gloria.ec1996@gmail.com",
+  "sameAs": ["https://instagram.com/gloria.english_", "https://www.youtube.com/@GloriaEnglishCourse", "https://www.tiktok.com/@gloria.english.co"],
+  "identifier": [
+    { "@type": "PropertyValue", "propertyID": "NPSN", "value": "K5653817" },
+    { "@type": "PropertyValue", "propertyID": "NIB", "value": "9120212070416" }
+  ]
+}
+</script>
+</head>
+<body>
+<!--
+  Aset lokal (ganti file dengan nama yang sama bila ada versi baru):
+    assets/logo-gloria.png        logo, latar transparan
+    assets/video-opening.mp4      video opening (intro + layar di hero)
+    assets/video-closing.mp4      video closing (sebelum ajakan daftar)
+    assets/poster-opening.jpg     gambar sebelum video opening dimuat
+    assets/poster-closing.jpg     gambar sebelum video closing dimuat
+    assets/surat-izin-oss.jpg     Izin Komersial/Operasional OSS 2019 (pop-up legalitas)
+    assets/surat-izin-2015.jpg    Ijin Operasional PLS 2015 (pop-up legalitas, riwayat)
+    assets/intro-gloria.mp4       video intro sebelum beranda (6,9 detik, dipotong dan dipercepat 1,2x, 1440x2312, tanpa suara)
+    assets/poster-intro.jpg       bingkai pertama video intro (tampil sebelum video berjalan)
+    assets/intro-end.jpg          bingkai terakhir video intro (versi tenang untuk "kurangi gerak")
+    assets/bgm-futuristic.mp3     musik latar (loop 64 detik), mulai bersama video intro dan berlanjut di beranda
+    assets/sfx-intro-video.mp3    aksen suara video intro di atas musik latar: ledakan cahaya 1,33 dtk, beranda 7,33 dtk
+    assets/share.jpg              gambar pratinjau saat link dibagikan
+-->
+<a class="skip" href="#beranda">Langsung ke isi</a>
+<canvas id="scene" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="cursor" aria-hidden="true"></div>
+<span class="pin-label" id="pin-label" aria-hidden="true">Pulukan, Bali</span>
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <div class="gate__inner">
+    <img class="gate__logo" src="assets/logo-gloria-intro.png" alt="" width="592" height="731">
+    <p class="gate__name gold-text" id="gate-title">Gloria English Course</p>
+    <p class="gate__since">Bimbingan Belajar GLORIA sejak 1996, Pulukan, Jembrana</p>
+    <div class="gate__bar" role="progressbar" aria-label="Memuat halaman" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+    <div class="gate__meta"><span class="gate__state">Memuat</span><span class="gate__pct">0%</span></div>
+    <button class="btn btn--gold gate__go" type="button" data-enter="sound" autofocus>Masuk dengan suara</button>
+    <button class="gate__mute" type="button" data-enter="mute">Masuk tanpa suara</button>
+    <p class="gate__hint">Tekan Enter untuk masuk</p>
+  </div>
+</div>
+
+<div class="intro" id="intro">
+  <div class="intro__stage" aria-hidden="true">
+    <video class="intro__video" muted playsinline preload="none" poster="assets/poster-intro.jpg" disablepictureinpicture disableremoteplayback></video>
+  </div>
+  <button class="intro__skip" type="button" id="skip-intro">Lewati intro</button>
+</div>
+<!-- dark, slightly blurred veil between the intro and the home page: it sits above both, so the home page comes up out of it -->
+<div class="veil" id="veil" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#beranda"><img src="assets/logo-gloria.png" alt="" width="22" height="36"><span>Gloria English Course</span></a>
+  <nav class="nav__links" id="nav-links" aria-label="Menu utama">
+    <a href="#masa-depan">Masa depan</a>
+    <a href="#program">Program</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#legalitas">Legalitas</a>
+    <a href="#daftar">Biaya</a>
+  </nav>
+  <a class="btn btn--gold btn--sm nav__cta" href="https://wa.me/6285725428189?text=Halo%20Gloria%20English%20Course%2C%20saya%20ingin%20mendaftar%20kursus%20bahasa%20Inggris." target="_blank" rel="noopener">Daftar lewat WhatsApp</a>
+  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+</header>
+
+<button class="sound" id="sound" type="button" aria-pressed="false" aria-label="Suara latar">
+  <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  <span class="sound__label">Suara mati</span>
+</button>
+
+<main id="main">
+  <section class="hero" id="beranda" data-scene="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="hero__kicker">Bimbingan Belajar GLORIA, sejak 1996</p>
+        <h1 class="hero__title gold-text">Bahasa Inggris, kunci masa depanmu.</h1>
+        <p class="hero__lead">Kursus bahasa Inggris di Pulukan, Jembrana untuk tingkat Elementary sampai Advanced, English for Kids, dan English for Fun.</p>
+        <p class="hero__tagline">“We help you to make your dreams come true”</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="https://wa.me/6285725428189?text=Halo%20Gloria%20English%20Course%2C%20saya%20ingin%20mendaftar%20kursus%20bahasa%20Inggris." target="_blank" rel="noopener">Daftar lewat WhatsApp</a>
+          <button class="btn btn--ghost" type="button" data-open-izin>Cek Legalitas &amp; Izin Resmi</button>
+        </div>
+      </div>
+      <div class="hero__slot">
+        <div class="screen" id="screen">
+          <!-- src is set by main.js once the intro video has downloaded, so the two do not compete for the connection -->
+          <video id="video-opening" data-src="assets/video-opening.mp4" poster="assets/poster-opening.jpg" muted loop playsinline preload="auto" aria-label="Video opening Bimbingan Belajar GLORIA"></video>
+        </div>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#masa-depan" aria-label="Gulir ke bagian berikutnya"><span></span></a>
+  </section>
+
+  <section class="future" id="masa-depan" data-scene="future">
+    <div class="wrap future__grid">
+      <div class="future__copy">
+        <h2 class="h2 reveal">Dampak bahasa Inggris untuk masa depan</h2>
+        <p class="lead reveal">Teknologi, pekerjaan, dan pariwisata kini bergerak lintas negara. Bahasa Inggris menghubungkan semuanya, dan kemampuannya dibangun dari sekarang.</p>
+        <ul class="routes reveal">
+          <li class="route">
+            <h3>Teknologi dan AI</h3>
+            <p>Panduan perangkat lunak, kursus daring, dan alat AI paling banyak tersedia dalam bahasa Inggris. Siswa yang paham bisa belajar langsung dari sumbernya.</p>
+          </li>
+          <li class="route">
+            <h3>Karier internasional</h3>
+            <p>Hotel, kapal pesiar, dan perusahaan global mencari orang yang mampu berkomunikasi dalam bahasa Inggris, lisan maupun tulisan.</p>
+          </li>
+          <li class="route">
+            <h3>Pariwisata Bali</h3>
+            <p>Sesuai visi Gloria, lulusan disiapkan mendukung pariwisata Bali yang maju, tetap berbudaya dan berlandaskan Tri Hita Karana.</p>
+          </li>
+          <li class="route">
+            <h3>Studi dan beasiswa</h3>
+            <p>Banyak program studi dan beasiswa luar negeri mensyaratkan kemampuan bahasa Inggris. Dasar yang kuat membuat persiapannya lebih ringan.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="future__space" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="programs" id="program" data-scene="program">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="h2">Program kursus</h2>
+        <p class="lead">Setiap kelas melatih empat skill sekaligus: listening, speaking, reading, dan writing, dengan latihan percakapan dan roleplay.</p>
+      </div>
+      <div class="cards reveal">
+        <article class="card glass card--main" data-tilt>
+          <span class="card__glare" aria-hidden="true"></span>
+          <div class="card__body">
+            <h3 class="card__title">Certified English Course</h3>
+            <p>Kelas bertingkat. Siswa yang menyelesaikan program menerima Surat Tanda Selesai Belajar yang diketahui Dinas Pendidikan, Kepemudaan dan Olahraga Kabupaten Jembrana.</p>
+            <ol class="levels">
+              <li><span class="levels__en">Elementary</span><span class="levels__id">Tingkat Dasar</span></li>
+              <li><span class="levels__en">Intermediate</span><span class="levels__id">Tingkat Mahir</span></li>
+              <li><span class="levels__en">Advanced</span><span class="levels__id">Tingkat Terampil</span></li>
+            </ol>
+          </div>
+        </article>
+        <article class="card glass" data-tilt>
+          <span class="card__glare" aria-hidden="true"></span>
+          <div class="card__body">
+            <h3 class="card__title">English for Kids</h3>
+            <p>Kelas privat untuk anak. Empat skill dilatih dengan cara yang sesuai usianya.</p>
+            <ul class="tags"><li>Private English</li><li>Listening</li><li>Speaking</li><li>Reading</li><li>Writing</li></ul>
+          </div>
+        </article>
+        <article class="card glass" data-tilt>
+          <span class="card__glare" aria-hidden="true"></span>
+          <div class="card__body">
+            <h3 class="card__title">English for Fun</h3>
+            <p>Belajar lewat ungkapan sehari-hari, permainan, dan percakapan.</p>
+            <ul class="tags"><li>Daily Expressions</li><li>Grammar</li><li>Vocabulary</li><li>Listening &amp; Speaking</li><li>Games</li></ul>
+          </div>
+        </article>
+        <article class="card glass card--wide" data-tilt>
+          <span class="card__glare" aria-hidden="true"></span>
+          <div class="card__body">
+            <h3 class="card__title">Bimbingan belajar dan terjemahan</h3>
+            <p>Pendampingan pelajaran bahasa Inggris sekolah, serta jasa terjemahan Indonesia ke Inggris dan Inggris ke Indonesia.</p>
+            <a class="link" href="https://wa.me/6285142734756?text=Halo%20Gloria%20English%20Course%2C%20saya%20ingin%20bertanya%20jadwal%20kelas%20dan%20jasa%20terjemahan." target="_blank" rel="noopener">Tanyakan jadwal kelas</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="tentang" data-scene="about">
+    <div class="wrap about__grid">
+      <p class="about__year" aria-hidden="true">1996</p>
+      <div class="about__copy reveal">
+        <h2 class="h2">Lembaga keluarga yang berdiri sejak 1996</h2>
+        <p class="lead">LKP Gloria (Gloria English Course) dipimpin oleh I Gusti Ngurah Sudama, S.Pd., M.Pd., dengan Kantor Pusat di Jl. Ciung Wanara, Pulukan.</p>
+        <blockquote class="vision">
+          <p>Terciptanya lulusan yang unggul berbahasa Inggris, berbudaya, berlandaskan Tri Hita Karana menuju pariwisata Bali yang maju di masa depan.</p>
+          <cite>Visi LKP Gloria</cite>
+        </blockquote>
+        <ul class="mission">
+          <li>Menerapkan dwi bahasa, bahasa Inggris dan bahasa Bali, pada hari tertentu.</li>
+          <li>Meningkatkan budaya membaca dan menulis (English literacy).</li>
+          <li>Berpartisipasi aktif mendukung kegiatan kepariwisataan.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="legal" id="legalitas" data-scene="legal">
+    <div class="wrap legal__grid">
+      <div class="legal__copy reveal">
+        <h2 class="h2">Legalitas dan izin resmi</h2>
+        <p class="lead">LKP Gloria terdaftar sebagai satuan pendidikan nonformal bidang pendidikan bahasa di Kabupaten Jembrana. Dokumen izinnya bisa Anda periksa langsung.</p>
+        <button class="btn btn--gold btn--lg" type="button" data-open-izin>Cek Legalitas &amp; Izin Resmi</button>
+      </div>
+      <div class="seal glass reveal">
+        <dl class="reg">
+          <div><dt>NIB (OSS)</dt><dd>9120212070416</dd></div>
+          <div><dt>NPSN</dt><dd>K5653817</dd></div>
+          <div><dt>KBLI</dt><dd>85493, Pendidikan Bahasa Swasta</dd></div>
+          <div><dt>Izin Komersial/Operasional</dt><dd>Terbit 1 Oktober 2019</dd></div>
+          <div><dt>Riwayat izin</dt><dd>Ijin Operasional PLS 503/012/Op./KPPT/X/2015</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="enroll" id="daftar" data-scene="enroll">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="h2">Biaya dan pendaftaran</h2>
+        <p class="lead">Rincian biaya, jadwal kelas, dan konsultasi program dijelaskan langsung lewat WhatsApp, sesuai tingkat dan kebutuhan siswa.</p>
+      </div>
+      <ol class="steps reveal">
+        <li class="step glass"><span class="step__n" aria-hidden="true">1</span><h3>Kirim pesan</h3><p>Ceritakan usia siswa dan tujuan belajarnya.</p></li>
+        <li class="step glass"><span class="step__n" aria-hidden="true">2</span><h3>Konsultasi</h3><p>Kami bantu memilih program, tingkat, dan jadwal yang pas.</p></li>
+        <li class="step glass"><span class="step__n" aria-hidden="true">3</span><h3>Mulai belajar</h3><p>Kelas berlangsung di Kantor Pusat, Jl. Ciung Wanara No. 24A, Pulukan.</p></li>
+      </ol>
+      <div class="wa-grid reveal">
+        <a class="wa glass" href="https://wa.me/6285142734756?text=Halo%20Gloria%20English%20Course%2C%20saya%20ingin%20bertanya%20biaya%20dan%20jadwal%20kursus." target="_blank" rel="noopener">
+          <span class="wa__role">WhatsApp Staff</span>
+          <span class="wa__num">+62 851-4273-4756</span>
+          <span class="wa__do">Tanya biaya dan jadwal</span>
+        </a>
+        <a class="wa glass" href="https://wa.me/6285725428189?text=Halo%20Gloria%20English%20Course%2C%20saya%20ingin%20mendaftar%20kursus%20bahasa%20Inggris." target="_blank" rel="noopener">
+          <span class="wa__role">WhatsApp Owner</span>
+          <span class="wa__num">+62 857-2542-8189</span>
+          <span class="wa__do">Daftar dan konsultasi program</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" id="penutup" data-scene="closing">
+    <div class="wrap closing__inner">
+      <div class="screen screen--closing">
+        <!-- src is set by main.js when this section comes within about two screens, so visitors who never scroll here do not download it -->
+        <video id="video-closing" data-src="assets/video-closing.mp4" poster="assets/poster-closing.jpg" muted loop playsinline preload="auto" aria-label="Video closing Gloria English Course"></video>
+      </div>
+      <h2 class="closing__title gold-text reveal">Wujudkan mimpimu bersama Gloria</h2>
+      <p class="lead reveal">Mulai dari satu pesan. Owner dan staff membalas pertanyaan pendaftaran lewat WhatsApp.</p>
+      <a class="btn btn--gold btn--lg reveal" href="https://wa.me/6285725428189?text=Halo%20Gloria%20English%20Course%2C%20saya%20ingin%20mendaftar%20kursus%20bahasa%20Inggris." target="_blank" rel="noopener">Daftar lewat WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__brand"><img src="assets/logo-gloria.png" alt="" width="26" height="42"><span>LKP Gloria (Gloria English Course)</span></p>
+        <p>Bimbingan Belajar GLORIA sejak 1996.</p>
+        <p class="footer__tag">We help you to make your dreams come true</p>
+      </div>
+      <div>
+        <h3>Kantor Pusat</h3>
+        <p>Jl. Ciung Wanara No. 24A, Banjar/Desa Pulukan, Kec. Pekutatan, Kab. Jembrana, Bali</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Ciung+Wanara+No.+24A+Pulukan+Pekutatan+Jembrana+Bali" target="_blank" rel="noopener">Buka di Google Maps</a></p>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <ul class="footer__list">
+          <li>WhatsApp Owner: <a href="https://wa.me/6285725428189" target="_blank" rel="noopener">+62 857-2542-8189</a></li>
+          <li>WhatsApp Staff: <a href="https://wa.me/6285142734756" target="_blank" rel="noopener">+62 851-4273-4756</a></li>
+          <li>Email: <a href="mailto:gloria.ec1996@gmail.com">gloria.ec1996@gmail.com</a></li>
+          <li>Instagram: <a href="https://instagram.com/gloria.english_" target="_blank" rel="noopener">@gloria.english_</a></li>
+          <li>YouTube: <a href="https://www.youtube.com/@GloriaEnglishCourse" target="_blank" rel="noopener">@GloriaEnglishCourse</a></li>
+          <li>TikTok: <a href="https://www.tiktok.com/@gloria.english.co" target="_blank" rel="noopener">@gloria.english.co</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© 2026 LKP Gloria. NPSN K5653817, NIB 9120212070416.</p>
+      <button class="link" type="button" data-open-izin>Cek Legalitas &amp; Izin Resmi</button>
+    </div>
+  </div>
+</footer>
+
+<dialog class="izin" id="izin" aria-labelledby="izin-title">
+  <div class="izin__head">
+    <h2 id="izin-title">Dokumen izin LKP Gloria</h2>
+    <button class="btn btn--ghost btn--sm" type="button" data-close>Tutup</button>
+  </div>
+  <div class="izin__tabs" role="tablist" aria-label="Pilih dokumen">
+    <button type="button" role="tab" id="tab-oss" aria-controls="doc-oss" aria-selected="true">Izin OSS 2019</button>
+    <button type="button" role="tab" id="tab-2015" aria-controls="doc-2015" aria-selected="false" tabindex="-1">Ijin Operasional 2015</button>
+  </div>
+  <div class="izin__body">
+    <figure class="izin__doc" id="doc-oss" role="tabpanel" aria-labelledby="tab-oss">
+      <a href="assets/surat-izin-oss.jpg" target="_blank" rel="noopener"><img src="assets/surat-izin-oss.jpg" alt="Izin Komersial/Operasional dari sistem OSS untuk LKP Gloria, NIB 9120212070416, terbit 1 Oktober 2019" width="780" height="1082" loading="lazy"></a>
+      <figcaption>
+        <h3>Izin Komersial/Operasional</h3>
+        <dl>
+          <div><dt>Penerbit</dt><dd>Lembaga Pengelola dan Penyelenggara OSS</dd></div>
+          <div><dt>NIB</dt><dd>9120212070416</dd></div>
+          <div><dt>KBLI</dt><dd>85493, Pendidikan Bahasa Swasta</dd></div>
+          <div><dt>Komitmen</dt><dd>Izin Penyelenggaraan Satuan Pendidikan Nonformal</dd></div>
+          <div><dt>Terbit</dt><dd>1 Oktober 2019</dd></div>
+        </dl>
+        <a class="link" href="assets/surat-izin-oss.jpg" target="_blank" rel="noopener">Buka ukuran penuh</a>
+      </figcaption>
+    </figure>
+    <figure class="izin__doc" id="doc-2015" role="tabpanel" aria-labelledby="tab-2015" hidden>
+      <a href="assets/surat-izin-2015.jpg" target="_blank" rel="noopener"><img src="assets/surat-izin-2015.jpg" alt="Ijin Operasional Pendidikan Luar Sekolah LKP Gloria nomor 503/012/Op./KPPT/X/2015" width="812" height="1192" loading="lazy"></a>
+      <figcaption>
+        <h3>Ijin Operasional Pendidikan Luar Sekolah</h3>
+        <dl>
+          <div><dt>Penerbit</dt><dd>Kantor Pelayanan Perijinan Terpadu Kabupaten Jembrana</dd></div>
+          <div><dt>Nomor</dt><dd>503/012/Op./KPPT/X/2015</dd></div>
+          <div><dt>Masa berlaku</dt><dd>26 September 2015 sampai 26 September 2019</dd></div>
+          <div><dt>Keterangan</dt><dd>Riwayat izin sebelum NIB dari sistem OSS terbit pada 2019.</dd></div>
+        </dl>
+        <a class="link" href="assets/surat-izin-2015.jpg" target="_blank" rel="noopener">Buka ukuran penuh</a>
+      </figcaption>
+    </figure>
+  </div>
+</dialog>
+
+<!-- GSAP 3.12.5 and three.js r160 are kept on this site (assets/vendor), not loaded from a CDN: an outage or a
+     tampered CDN file can no longer stop the page -->
+<script src="assets/vendor/gsap.min.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
